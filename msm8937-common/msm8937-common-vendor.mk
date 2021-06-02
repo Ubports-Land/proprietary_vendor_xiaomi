@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -181,6 +181,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -355,6 +356,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
@@ -448,23 +450,4 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     libsdm-disp-apis \
-    libtime_genoff \
-    QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    fastdormancy \
-    shutdownlistener \
-    CNEService \
-    QtiTetherService \
-    com.qualcomm.location \
-    ims \
-    qcrilmsgtunnel \
-    imssettings \
-    QtiTelephonyServicelibrary \
-    com.qti.location.sdk \
-    com.qualcomm.location.vzw_library \
-    embmslibrary \
-    imscmlibrary \
-    izat.xt.srv \
-    qcrilhook \
-    qti-telephony-common
+    libtime_genoff
